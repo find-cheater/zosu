@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --basewhite: rgba(255, 255, 255, 1);
+  --body-l-font-family: "Instrument Sans", Helvetica;
+  --body-l-font-size: 18px;
+  --body-l-font-style: normal;
+  --body-l-font-weight: 400;
+  --body-l-letter-spacing: -0.54px;
+  --body-l-line-height: 140%;
+  --body-r-font-family: "Instrument Sans", Helvetica;
+  --body-r-font-size: 16px;
+  --body-r-font-style: normal;
+  --body-r-font-weight: 400;
+  --body-r-letter-spacing: -0.48px;
+  --body-r-line-height: 140%;
+  --body-XL-font-family: "Instrument Sans", Helvetica;
+  --body-XL-font-size: 20px;
+  --body-XL-font-style: normal;
+  --body-XL-font-weight: 400;
+  --body-XL-letter-spacing: -0.6px;
+  --body-XL-line-height: 140%;
+  --body-XXL-font-family: "Instrument Sans", Helvetica;
+  --body-XXL-font-size: 32px;
+  --body-XXL-font-style: normal;
+  --body-XXL-font-weight: 400;
+  --body-XXL-letter-spacing: -0.96px;
+  --body-XXL-line-height: 140%;
+  --borderlightest: rgba(0, 0, 0, 0.05);
+  --dark-shade30: rgba(207, 208, 209, 1);
+  --display-s-font-family: "Clash Grotesk", Helvetica;
+  --display-s-font-size: 24px;
+  --display-s-font-style: normal;
+  --display-s-font-weight: 500;
+  --display-s-letter-spacing: -0.96px;
+  --display-s-line-height: 140%;
+  --display-XL-font-family: "Clash Grotesk", Helvetica;
+  --display-XL-font-size: 56px;
+  --display-XL-font-style: normal;
+  --display-XL-font-weight: 700;
+  --display-XL-letter-spacing: -1.1200000000000003px;
+  --display-XL-line-height: 120.00000762939453%;
+  --display-XS-font-family: "Clash Grotesk", Helvetica;
+  --display-XS-font-size: 16px;
+  --display-XS-font-style: normal;
+  --display-XS-font-weight: 400;
+  --display-XS-letter-spacing: -0.48px;
+  --display-XS-line-height: 140%;
+  --display-XXL-font-family: "Clash Grotesk", Helvetica;
+  --display-XXL-font-size: 88px;
+  --display-XXL-font-style: normal;
+  --display-XXL-font-weight: 400;
+  --display-XXL-letter-spacing: -1.76px;
+  --display-XXL-line-height: 119.00000762939453%;
+  --foundation-blueblue-50: rgba(234, 244, 253, 1);
+  --generaldark: rgba(17, 20, 24, 1);
+  --generalwhite: rgba(255, 255, 255, 1);
+  --gray-300: rgba(208, 213, 221, 1);
+  --neutral-0: rgba(255, 255, 255, 1);
+  --neutral-200: rgba(225, 231, 239, 1);
+  --neutral-300: rgba(202, 212, 224, 1);
+  --neutral-800: rgba(30, 41, 59, 1);
+  --neutrals-50: rgba(255, 255, 255, 1);
+  --neutrals-900: rgba(61, 61, 61, 1);
+  --primaryblue-50: rgba(237, 242, 244, 1);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}

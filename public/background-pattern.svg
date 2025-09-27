@@ -1,0 +1,54 @@
+<svg width="854" height="854" viewBox="0 0 854 854" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.2" clip-path="url(#clip0_74_9432)">
+<mask id="mask0_74_9432" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-53" y="0" width="960" height="960">
+<rect width="688" height="688" transform="translate(83 14)" fill="url(#paint0_radial_74_9432)"/>
+</mask>
+<g mask="url(#mask0_74_9432)">
+<g clip-path="url(#clip1_74_9432)">
+<g clip-path="url(#clip2_74_9432)">
+<line x1="27.5" x2="27.5" y2="960" stroke="white"/>
+<line x1="107.5" x2="107.5" y2="960" stroke="white"/>
+<line x1="187.5" x2="187.5" y2="960" stroke="white"/>
+<line x1="267.5" x2="267.5" y2="960" stroke="white"/>
+<line x1="347.5" x2="347.5" y2="960" stroke="white"/>
+<line x1="427.5" x2="427.5" y2="960" stroke="white"/>
+<line x1="507.5" x2="507.5" y2="960" stroke="white"/>
+<line x1="587.5" x2="587.5" y2="960" stroke="white"/>
+<line x1="667.5" x2="667.5" y2="960" stroke="white"/>
+<line x1="747.5" x2="747.5" y2="960" stroke="white"/>
+<line x1="827.5" x2="827.5" y2="960" stroke="#D0D5DD"/>
+</g>
+<g clip-path="url(#clip3_74_9432)">
+<line x1="-53" y1="79.5" x2="907" y2="79.5" stroke="white"/>
+<line x1="-53" y1="159.5" x2="907" y2="159.5" stroke="white"/>
+<line x1="-53" y1="239.5" x2="907" y2="239.5" stroke="white"/>
+<line x1="-53" y1="319.5" x2="907" y2="319.5" stroke="white"/>
+<line x1="-53" y1="399.5" x2="907" y2="399.5" stroke="white"/>
+<line x1="-53" y1="479.5" x2="907" y2="479.5" stroke="white"/>
+<line x1="-53" y1="559.5" x2="907" y2="559.5" stroke="white"/>
+<line x1="-53" y1="639.5" x2="907" y2="639.5" stroke="white"/>
+<line x1="-53" y1="719.5" x2="907" y2="719.5" stroke="white"/>
+<line x1="-53" y1="799.5" x2="907" y2="799.5" stroke="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_74_9432" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(344 -8.2016e-05) rotate(90) scale(688 359.092)">
+<stop/>
+<stop offset="0.953125" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_74_9432">
+<rect width="854" height="854" fill="white"/>
+</clipPath>
+<clipPath id="clip1_74_9432">
+<rect width="960" height="1440" fill="white" transform="translate(-53)"/>
+</clipPath>
+<clipPath id="clip2_74_9432">
+<rect width="960" height="960" fill="white" transform="translate(-53)"/>
+</clipPath>
+<clipPath id="clip3_74_9432">
+<rect width="960" height="960" fill="white" transform="translate(-53)"/>
+</clipPath>
+</defs>
+</svg>
